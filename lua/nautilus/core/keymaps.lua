@@ -56,7 +56,7 @@ keymap("n", "<C-u>", "<C-u>zz", opts)
 keymap("x", "<Leader>p", '"_dP', opts)
 
 --Show explore on leader ee
-keymap("n", "<Leader>ee", ":Explore<CR>", opts)
+-- keymap("n", "<Leader>ee", ":Explore<CR>", opts)
 
 --Adds leader(y/d) to add selection to system clipboard
 keymap("n", "<Leader>y", '"+y', opts)

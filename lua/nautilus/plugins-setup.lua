@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "nautilus.plugins" }, { import = "nautilus.plugins.lsp" } }, {
 	install = {
-		colorscheme = { "everforest", "rose-pine" },
+		colorscheme = { "everforest", "rose-pine", "gruvbox" },
 	},
 	checker = {
 		enabled = true,

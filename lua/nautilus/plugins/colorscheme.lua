@@ -1,14 +1,29 @@
+-- return {
+-- 	"neanias/everforest-nvim",
+-- 	version = false,
+-- 	lazy = false,
+-- 	priority = 1000, -- make sure to load this before all the other start plugins
+-- 	-- Optional; default configuration will be used if setup isn't called.
+-- 	config = function()
+-- 		vim.cmd([[colorscheme everforest]])
+-- 	end,
+-- }
 return {
-	"neanias/everforest-nvim",
-	version = false,
-	lazy = false,
-	priority = 1000, -- make sure to load this before all the other start plugins
-	-- Optional; default configuration will be used if setup isn't called.
-	config = function()
-		vim.cmd([[colorscheme everforest]])
-	end,
+	-- Gruvbox theme plugin
+	{
+		"ellisonleao/gruvbox.nvim",
+		priority = 1000, -- Ensure this has high priority to load first
+		config = function()
+			require("gruvbox").setup({
+				contrast = "hard", -- Set your preferred options here
+				-- Add any other configurations you want
+			})
+			vim.cmd("colorscheme gruvbox")
+		end,
+	},
+
+	-- Other plugins can be listed here
 }
---
 -- return {
 -- 	"rose-pine/neovim",
 -- 	version = false,
